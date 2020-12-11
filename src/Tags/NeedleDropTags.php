@@ -6,25 +6,15 @@ use Statamic\Tags\Tags;
 
 class NeedleDropTags extends Tags
 {
-    protected static $handle = 'needle_drop';
+    protected static $handle = 'needledrop';
 
     /**
-     * The {{ needle_drop }} tag.
+     * The {{ needledrop:assets }} tag.
      *
      * @return string|array
      */
-    public function index()
+    public function assets()
     {
-        //
-    }
-
-    /**
-     * The {{ needle_drop:example }} tag.
-     *
-     * @return string|array
-     */
-    public function example()
-    {
-        //
+        return view('needledrop::assets');
     }
 }

@@ -14,4 +14,6 @@ class ServiceProvider extends AddonServiceProvider
     protected $modifiers = [
         Needledrop\Modifiers\NeedleDropModifier::class,
     ];
+
+    protected $viewNamespace = 'needledrop';
 }
